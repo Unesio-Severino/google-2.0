@@ -1,10 +1,23 @@
 interface Button {
-  btnClass: string;
+  btnClass?: string;
   title: string;
-  onClick: () => void;
+  onClick?: (event: React.FormEvent) => void;
 }
 
-interface GithubAuth {
+interface Progress {
+  progress: number;
+}
+
+interface AuthInteface {
   clientId: string;
   clientSecret: string;
+}
+
+interface ArrayType {
+  map: Function;
+}
+
+interface FolderStructure {
+  parentId: string;
+  ownerEmail: string;
 }
